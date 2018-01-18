@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Genres</title>
+        <link id="mainStyleSheet" href="styleSheets/genres.css" rel="stylesheet" type="text/css" />
+        <link id="storePreviewStyleSheet" href="styleSheets/genresStore.css" rel="stylesheet" type="text/css" />
+        <link href="styleSheets/general.css" rel="stylesheet" type="text/css" />
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div class="background" id="background"></div>
+        <div id="header"></div>
+        <div id="content">
+            <div id="controlMenu">
+                <div class="cards" id="controlBackground"></div>
+                <div class="buttons round controlButtons" id="controlButtonRPG">
+                    <div class="buttonInfo"><p>Role Playing</p></div>
+                </div>
+                <div class="buttons round controlButtons" id="controlButtonFPS">
+                    <div class="buttonInfo"><p>First Person Shooter</p></div>
+                </div>
+                <div class="buttons round controlButtons" id="controlButtonStrategy">
+                    <div class="buttonInfo"><p>Strategy</p></div>
+                </div>
+                <div class="buttons round controlButtons" id="controlButtonSimulation">
+                    <div class="buttonInfo"><p>Simulation</p></div>
+                </div>
+                <div class="buttons round controlButtons" id="controlButtonSports">
+                    <div class="buttonInfo"><p>Sports</p></div>
+                </div>
+                <div class="buttons round controlButtons" id="controlButtonHorror">
+                    <div class="buttonInfo"><p>Horror Survival</p></div>
+                </div>
+                <div class="buttons round controlButtons" id="controlButtonMMO">
+                    <div class="buttonInfo"><p>Massively Multiplayer Online</p></div>
+                </div>
+                <div class="buttons round controlButtons" id="controlButtonRacing">
+                    <div class="buttonInfo"><p>Racing</p></div>
+                </div>
+                <div class="buttons round controlButtons" id="controlButtonView"></div>
+            </div>
+
+            <div id="infoView">
+                <div class="cards" id="infoScreen">
+                    <div id="infoScreenHeader">
+                        <div class="background cards" id="infoScreenHeaderBackground"></div>
+                        <div class="buttons round" id="infoScreenHeaderIcon"></div>
+                        <div id="infoScreenHeaderTitle"><p id="infoScreenHeaderTitleInner"></p></div>
+                    </div>
+                    <div id="infoScreenContent">
+                        <div class="background cards" id="infoScreenContentBackground"></div>
+                        <div id="infoScreenContentDescription">
+                            <p class="cards" id="infoScreenContentDescriptionInner"></p>
+                        </div>
+                        <div id="infoScreenContentDescriptionMedia">
+                            <div class="cards" id="infoScreenContentDescriptionMediaGames"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards" id="storeView">
+                <div class="background" id="storeViewBackground"></div>
+                <div class="storeViewLeftPanelWrap">
+                    <div class="gamePreviewWrap" id="storeViewGamePreviewWrap">
+                        <div class="gamePreviewWrapBuffer">
+                            <div class="cards gamePreviews" id="storeViewGameThumbnail">
+                                <div class="gamePreviewBackground"></div>
+                                <div class="cards buttons gamePreviewDetails"><p>Full Details</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="storeViewButtonBuyWrap">
+                        <div class="cards buttons storeViewButtonBuy" id="storeViewButtonBuyStandard">Buy Standard</div>
+                        <div class="cards buttons storeViewButtonBuy" id="storeViewButtonBuyDeluxe">Buy Deluxe</div>
+                    </div>
+                    <div id="storeViewPublisherInfoWrap">
+                        <div class="cards" id="storeViewPublisherInfo"></div>
+                    </div>
+                </div>
+                
+                <div class="storeViewRightPanelWrap">
+                    <div class="cards" id="storeViewScreenshotSlideWrap">
+                        <div class="cards" id="storeViewScreenshotSlideMainScreenShot">
+                            <div id="screenshotSlideMainScreenShot"></div>
+                        </div>
+                        <div class="cards" id="storeViewScreenshotSlideSelectorWrap">
+                            <div id="storeViewScreenshotSlideSelector"></div>
+                        </div>
+                    </div>
+                    <div class="cards" id="storeViewGameInfoWrap"></div>
+                </div>
+                
+            </div>
+
+            <div class="cards messageWelcome" id="messageWelcomeTop">
+                <p>PLAYER #1: READY!</p>
+            </div>
+            <div class="cards messageWelcome" id="messageWelcomeBottom">
+                <p>PRESS THE ICON ABOVE TO BEGIN</p>
+            </div>
+            <div class="buttons round" id="soundtrackButton">
+                <div class="buttonInfo" id="soundtrackButtonInfo"><p>Toggle Music</p></div>
+            </div>
+            <div class="buttons round" id="storeLinkButton" onclick="window.open('index.html', '_blank');">
+                <div class="buttonInfo"><p>Go to the store</p></div>
+            </div>
+        </div>
+        <!-- <div id="footer">
+            <div id="footerIconCredit">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </div> -->
+        <script src="data/genre.js"></script>
+        <script src="data/game.js"></script>
+        <script src="javaScripts/detectScreensize.js"></script>
+        <script src="javaScripts/general.js"></script>
+        <script src="javaScripts/genresStore.js"></script>
+        <script src="javaScripts/genres.js"></script>
+    </body>
+</html>

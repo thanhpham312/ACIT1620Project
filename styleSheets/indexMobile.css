@@ -1,0 +1,123 @@
+:root {
+    font-size: 2em;
+}
+
+/* Navigation Menu: */
+
+#navigationMenu {
+    position: fixed;
+    width: 100vw;
+    height: 6em;
+    top: 0;
+    z-index: 15;
+    border-radius: 0;
+    background-color: rgba(69, 90, 100, 1);
+}
+
+#navigationMenu ul {
+    position: relative;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigationMenu ul li {
+    position: relative;
+    height: 6em;
+    left: 3.2vw;
+    float: left;
+    margin: 0;
+    transition: 0.3s;
+}
+
+#navigationMenu ul li a {
+    position: relative;
+    display: block;
+    height: 3em;
+    font-size: 2em;
+    line-height: 3em;
+    color: white;
+    text-align: center;
+    padding: 0 5vw;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#navigationMenu ul li:hover {
+    color: white;
+    cursor: pointer;
+    background-color: rgba(17, 17, 17, 1);
+}
+
+#navigationMenu ul li:hover ul  {
+    top: 0;
+    opacity: 1;
+    z-index: 15;
+}
+
+#navigationMenuSearchbarWrap {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0;
+    right: 5vw;
+}
+#navigationMenuSearchbar {
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    top: 50%;
+    margin: -2.5vh 0 0 0;
+    padding: 0 1% 0 2em;
+    border: none;
+    float: left;
+    background: url(../img/icons/search.svg), var(--background-color);
+    background-position: 1% 50%;
+    background-size: auto 1.5em;
+    background-repeat: no-repeat;
+}
+
+/* Submenus: */
+
+#navigationMenu ul li ul {
+    position: absolute;
+    width: 200%;
+    height: auto;
+    top: -100vh;
+    list-style-type: none;
+    margin: 8vh 0 0 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#navigationMenu ul li ul li {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+#navigationMenu ul li ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 2vh 16px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    transition: 0.3s;
+}
+
+/* #navigationMenuLogo {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    top: 50%;
+    right: 3.2vw;
+    margin: -2.5vh 0 0 0;
+    background-image: url(../img/icons/genreView.svg);
+    box-shadow: 0.05em 0.05em 0.1em 0.03em rgba(0, 0, 0, 0.5);
+} */

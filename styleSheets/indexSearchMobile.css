@@ -1,0 +1,193 @@
+#storeSearchView {
+    position: absolute;
+    opacity: 1;
+    width: 100vw;
+    height: calc(100vh - 6em);
+    top: 6em;
+    margin: 0 0 0 0;
+    padding: 1%;
+    z-index: 10;
+    border-radius: 0;
+    background-color: var(--store-background-color);
+    overflow: auto;
+}
+
+#storeSearchFilterBarWrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    border-radius: 0;
+}
+
+#storeSearchResultWindowWrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+/* Search Bar: */
+
+#storeSearchFilterBar {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    color: white;
+    overflow: auto;
+}
+
+#storeSearchFilterBar p {
+    width: 100%;
+    height: auto;
+    padding: 0.2em 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: black;
+    border-bottom: 0.05em solid var(--store-main-color);
+    white-space: nowrap;
+    overflow: auto;
+}
+
+#storeSearchSearchbar {
+    width: 100%;
+    height: 2.1em;
+    font-size: 1.5em;
+    margin: 0 0 3% 0;
+    padding: 0 1% 0 2.5em;
+    border: none;
+    color: white;
+    background: url(../img/icons/search.svg), var(--store-main-color);
+    background-position: 1.5% 50%;
+    background-size: auto 1.5em;
+    background-repeat: no-repeat;
+}
+
+.storeSearchSelect {
+    width: 100%;
+    height: auto;
+    margin: 0 0 3% 0;
+    border: none;
+}
+
+.storeSearchSelectTitle {
+    width: 100%;
+    height: 2em;
+    padding: 0.3em 2.5em 0.3em 0.5em;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    background: url(../img/icons/down.svg);
+    background-color: var(--store-main-color) !important;
+    background-position: 98.5% 50%;
+    background-size: auto 1.5em;
+    background-repeat: no-repeat;
+}
+
+.storeSearchSelectList {
+    position: relative;
+    width: 100%;
+    height: 0;
+    top: 10%;
+    left: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.storeSearchSelectList:focus {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+}
+
+.storeSearchSelectTitle:hover, .storeSearchSelectList {
+    cursor: pointer;
+}
+
+.storeSearchSelectList ul {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.storeSearchSelectList ul li {
+    width: 100%;
+    height: auto;
+    padding: 0.3em 2.5em 0.3em 0.5em;
+    color: white;
+    list-style-type: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: var(--store-main-color);
+    background-position: 1.5% 50%;
+    background-size: auto 1.5em;
+    background-repeat: no-repeat;
+    border-bottom: 0.05em solid var(--background-color);
+    transition: 0.3s;
+}
+
+.storeSearchSelectList ul li:hover {
+    opacity: 0.9;
+}
+
+/* Search Results: */
+
+#storeSearchResultWindow {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.gamePreviewWrap {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 70% 0 0 0;
+    overflow: hidden;
+}
+
+/* Statistics */
+
+#storeSearchViewStatisticWrap {
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+    top: -100vh;
+    left: 50%;
+    margin: -40vw 0 0 -40vw;
+    padding: 2%;
+    background-color: var(--store-main-color);
+    overflow: auto;
+    white-space: nowrap;
+    z-index: 15;
+}
+
+#storeSearchViewStatisticWrap:active, #storeSearchViewStatisticWrap:focus {
+    top: 50%;
+}
+
+#storeSearchViewStatisticWrap:focus + #storeSearchViewBackground {
+    z-index: 10;
+    background-color: var(--background-color);
+}
+
+#storeSearchViewBackground {
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#storeSearchViewStatisticWrap p {
+    height: auto;
+    font-size: 1.5em;
+    padding: 2%;
+    border-bottom: 0.05em solid black;
+    text-align: justify;
+    white-space: normal;
+    
+}

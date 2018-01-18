@@ -1,0 +1,324 @@
+/* Store */
+
+.gamePreviewWrap {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 70% 0 0 0;
+    overflow: hidden;
+}
+
+.gamePreviewWrapBuffer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding: 5%;
+}
+
+.gamePreviews {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.gamePreviewBackground {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+}
+
+.gamePreviewDetails {
+    position: absolute;
+    height: 15%;
+    width: 70%;
+    top: 70%;
+    left: 50%;
+    margin: 0 0 0 -35%;
+    transition: 0.3s;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(96,125,139,1) !important;
+    color: white;
+    font-weight: 650;
+    overflow: hidden;
+}
+
+.gamePreviewDetails p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    margin: -0.7em 0 0 0;
+    font-size: 1.1em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gamePreviews:hover .gamePreviewBackground {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.gamePreviews:hover .gamePreviewDetails {
+    opacity: 1;
+}
+
+/* ****************** */
+
+#storeViewBackground {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(38, 50, 56, 1)), url(../img/background/genre/RolePlaying/4.jpg);
+    background-size: cover;
+}
+
+#storeDetailView {
+    position: absolute;
+    opacity: 1;
+    width: 100vw;
+    height: 92vh;
+    top: -100vh;
+    margin: 0 0 0 0;
+    padding: 1%;
+    z-index: 10;
+    border-radius: 0;
+    background-color: rgba(38, 50, 56, 1);
+    overflow: auto;
+}
+
+/* #storeDetailView {
+    position: absolute;
+    opacity: 1;
+    width: 100vw;
+    height: 92vh;
+    top: 8vh;
+    margin: 0 0 0 0;
+    padding: 1%;
+    z-index: 10;
+    border-radius: 0;
+    background-color: rgba(38, 50, 56, 1);
+    overflow: auto;
+} */
+
+#storeViewBackground {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(38, 50, 56, 1)), url(../img/background/genre/RolePlaying/4.jpg);
+    background-size: cover;
+}
+
+#storeViewGamePreviewWrap {
+    width: 100%;
+    padding: 140% 0 0 0;
+    float: none;
+}
+
+#storeSearchResultStatisticButton {
+    position: fixed;
+    height: 10vh;
+    width: 10vh;
+    bottom: 5vh;
+    left: calc(100vw - 15vh);
+    background-image: url('../img/icons/statistic.svg');
+    z-index: 20;
+}
+
+#storeSearchResultStatisticButton .buttonInfo {
+    left: -250%;
+}
+
+/* Left Panel */
+
+.storeViewLeftPanelWrap {
+    position: relative;
+    width: 20%;
+    padding: 1%;
+}
+
+#storeViewButtonBuyWrap {
+    position: relative;
+    width: 100%;
+    padding: 5%;
+}
+
+.storeViewButtonBuy {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    margin: 5% 0;
+    padding: 3%;
+    text-align: center;
+    background-color: rgba(96, 125, 139, 1) !important;
+    color: white;
+}
+
+#storeViewPublisherInfoWrap {
+    padding: 5%;
+}
+
+#storeViewPublisherInfo {
+    padding: 5%;
+}
+
+#storeViewPublisherInfo p {
+    padding: 0% 1% 3% 3%;
+    border-bottom: 0.05em solid black;
+}
+
+/* Right panel */
+
+.storeViewRightPanelWrap {
+    position: absolute;
+    width: 80%;
+    top: 0;
+    right: 0;
+    height: auto;
+    padding: 2.85%;
+}
+
+/* Screenshot Slide */
+
+#storeViewScreenshotSlideWrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+}
+
+#storeViewScreenshotSlideMainScreenShot {
+    position: relative;
+    width: 100%;
+    padding: 56.25% 0 0 0;
+    overflow: hidden;
+}
+
+#storeViewScreenshotSlideMainScreenShot div {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+#storeViewScreenshotSlideSelectorWrap {
+    position: relative;
+    width: 100%;
+    margin: 3% 0 0 0;
+    padding: 15% 0 0 0;
+}
+
+#storeViewScreenshotSlideSelector {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    padding: 1% 1% 2% 1%;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#storeViewScreenshotSlideSelector::-webkit-scrollbar {
+    height: 0.3em;
+    background: rgba(69, 90, 100, 1);
+}
+
+#storeViewScreenshotSlideSelector img {
+    position: relative;
+    height: 100%;
+    width: auto;
+    margin: 0 1% 0 0;
+}
+
+#storeViewScreenshotSlideSelector img:hover {
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0em 0em 0.7em 0.2em var(--store-main-color) !important;
+}
+
+
+/* Game Info */
+
+#storeViewGameInfoWrap {
+    position: relative;
+    width: 100%;
+    margin: 5% 0 0 0;
+    padding: 3%;
+}
+
+#storeViewGameInfoWrap p {
+    padding: 0% 0% 2% 0%;
+    border-bottom: 0.05em solid black;
+    text-align: justify;
+}
+
+#storeDetailViewBackButton {
+    position: fixed;
+    height: 10vh;
+    width: 10vh;
+    bottom: 5vh;
+    left: -100vh;
+    background-image: url('../img/icons/back.svg');
+    z-index: 20;
+}
+
+/* Comments */
+
+#storeViewCommentWrap {
+    position: relative;
+    width: 100%;
+    margin: 5% 0 0 0;
+    padding: 3%;
+}
+
+#storeViewCommentInnerWrap {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.storeViewComments {
+    margin: 0 0 3% 0;
+    padding: 0% 0% 3% 0%;
+    padding: 3%;
+    text-align: justify;
+    background-color: var(--store-background-color) !important;
+    color: white;
+}
+
+.storeViewComments div {
+    padding: 2% 0% 0.5% 0%;
+    text-align: justify;
+}
+
+.storeViewCommentUsername {
+    font-size: 1.5em;
+    font-weight: 700;
+    border-bottom: 0.05em solid white;
+}
+
+.storeViewCommentComment {
+    padding-bottom: 1em;
+    border-bottom: 0.05em solid white;
+}
+
+#storeViewCommentInputs input, #storeViewCommentInputs textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+}
+
+#commentInputComment {
+    margin: 1% 0 0 0;
+    min-height: 30vh;
+}
+
+.commentButton {
+    width: auto !important;
+    margin: 0 0.5em 0 0;
+    padding: 0.3em 1em !important;
+}

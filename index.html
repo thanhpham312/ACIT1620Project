@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Storigin</title>
+        <link id="mainStyleSheet" href="styleSheets/index.css" rel="stylesheet" type="text/css" />
+        <link id="storeStyleSheet" href="styleSheets/indexStore.css" rel="stylesheet" type="text/css" />
+        <link id="searchStyleSheet" href="styleSheets/indexSearch.css" rel="stylesheet" type="text/css" />
+        <link href="styleSheets/general.css" rel="stylesheet" type="text/css" />
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <meta charset="ISO-8859-1">
+    </head>
+    <body>
+        <div class="background" id="background"></div>
+        <div class="cards" id="navigationMenu">
+            <!-- <div class="round" id="navigationMenuLogo"></div> -->
+            <ul>
+                <li><a onclick="location.reload();">HOME</a></li>
+                <!-- <li>
+                    <a>Browse</a>
+                    <ul class="cards">
+                        <li><a>Role Playing</a></li>
+                        <li><a>First Person Shooter</a></li>
+                        <li><a>Strategy</a></li>
+                        <li><a>Simulation</a></li>
+                        <li><a>Sports</a></li>
+                        <li><a>Horror</a></li>
+                        <li><a>MMORPG</a></li>
+                        <li><a>Racing</a></li>
+                    </ul>
+                </li> -->
+                <li><a href="genres.html" target="_blank">INFORMATION</a></li>
+            </ul>
+            <!-- <div id="navigationMenuSearchbarWrap">
+                <input class="cards" type="text" id="navigationMenuSearchbar" />
+            </div> -->
+        </div>
+
+        <div id="storeSearchView">
+            <div id="storeSearchFilterBarWrap">
+                <div class="cards" id="storeSearchFilterBar">
+                    <p>Search by Title:</p>
+                    <input class="cards" type="text" id="storeSearchSearchbar" />
+                    <p>Filter by Genre:</p>
+                    <div class="storeSearchSelect">
+                        <div class="cards buttons storeSearchSelectTitle" id="storeSearchGenreSelectTitle">All</div>
+                        <div class="storeSearchSelectList" id="storeSearchGenreSelectList">
+                            <!-- To be filled out using javaScript -->
+                        </div>
+                    </div>
+                    <p>Filter by Developer:</p>
+                    <div class="storeSearchSelect">
+                        <div class="cards buttons storeSearchSelectTitle" id="storeSearchDeveloperSelectTitle">All</div>
+                        <div class="storeSearchSelectList" id="storeSearchDeveloperSelectList">
+                            <!-- To be filled out using javaScript -->
+                        </div>
+                    </div>
+                    <p>Filter by Publisher:</p>
+                    <div class="storeSearchSelect">
+                        <div class="cards buttons storeSearchSelectTitle" id="storeSearchPublisherSelectTitle">All</div>
+                        <div class="storeSearchSelectList" id="storeSearchPublisherSelectList">
+                            <!-- To be filled out using javaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="storeSearchResultWindowWrap">
+                <div class="cards" id="storeSearchResultWindow"></div>
+                <div class="buttons round" id="storeSearchResultStatisticButton">
+                    <div class="buttonInfo"><p>View statistics</p></div>
+                </div>
+            </div>
+            <div class="cards" id="storeSearchViewStatisticWrap">
+                <p class="cards">asdasd</p>
+            </div>
+            <div class="background" id="storeSearchViewBackground"></div>
+        </div>
+
+        <div class="cards" id="storeDetailView">
+            <div class="background" id="storeViewBackground"></div>
+            <div class="storeViewLeftPanelWrap">
+                <div class="gamePreviewWrap" id="storeViewGamePreviewWrap">
+                    <div class="gamePreviewWrapBuffer">
+                        <div class="cards gamePreviews" id="storeDetailGameThumbnail"></div>
+                    </div>
+                </div>
+                <div id="storeViewButtonBuyWrap">
+                    <div class="cards buttons storeViewButtonBuy" id="storeViewButtonBuyStandard">
+                        <!-- To be filled out using javaScript -->
+                    </div>
+                    <div class="cards buttons storeViewButtonBuy" id="storeViewButtonBuyDeluxe">
+                        <!-- To be filled out using javaScript -->
+                    </div>
+                </div>
+                <div id="storeViewPublisherInfoWrap">
+                    <div class="cards" id="storeViewPublisherInfo">
+                        <!-- To be filled out using javaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="storeViewRightPanelWrap">
+                <div class="cards" id="storeViewScreenshotSlideWrap">
+                    <div class="cards" id="storeViewScreenshotSlideMainScreenShot">
+                        <div id="screenshotSlideMainScreenShot"></div>
+                    </div>
+                    <div class="cards" id="storeViewScreenshotSlideSelectorWrap">
+                        <div id="storeViewScreenshotSlideSelector">
+                            <!-- To be filled out using javaScript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="cards" id="storeViewGameInfoWrap">
+                    <!-- To be filled out using javascript -->
+                </div>
+                <div class="cards" id="storeViewCommentWrap">
+                    <div id="storeViewCommentInnerWrap">
+                        <div class="cards storeViewComments">
+                            <!-- To be filled out using javascript -->
+                        </div>
+                    </div>
+                    <div class=" cards storeViewComments" id="storeViewCommentInputs">
+                        <input class="cards" type="text" id="commentInputUsername" placeholder="Enter a username" />
+                        <textarea class="cards" type="" id="commentInputComment" placeholder="Type your comment here."></textarea>
+                        <input class="cards buttons commentButton" type="button" id="commentSubmitButton" value="Submit" />
+                        <input class="cards buttons commentButton" type="button" id="commentClearButton" value="Clear" />
+                    </div>
+                </div>
+            </div>
+            <div class="buttons round" id="storeDetailViewBackButton">
+                <div class="buttonInfo"><p>Go back</p></div>
+            </div>
+        </div>
+        <script src="data/genre.js"></script>
+        <script src="data/game.js"></script>
+        <script src="javaScripts/detectScreensize.js"></script>
+        <script src="javaScripts/index.js"></script>
+        <script src="javaScripts/indexSearch.js"></script>
+        
+    </body>
+</html>
